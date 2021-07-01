@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".onboarding.ui.WelcomeFragment">
+
+    <TextView
+        android:id="@+id/welcometext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to\nMemopedia!"
+        android:textSize="42sp"
+        android:lineSpacingExtra="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guide"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get the latest memes!"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="12dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcometext"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_hor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35"
+        />
+
+    <ImageView
+        android:id="@+id/meme_foo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guide_hor"
+        android:src="@drawable/meme_foo"
+        android:layout_marginStart="24dp"/>
+
+    <ImageView
+        android:id="@+id/meme_doge"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guide_hor"
+        android:src="@drawable/meme_doge"
+        android:layout_marginEnd="24dp"/>
+
+    <ImageView
+        android:id="@+id/meme_funny"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toEndOf="@id/meme_foo"
+        app:layout_constraintEnd_toStartOf="@id/meme_doge"
+        app:layout_constraintTop_toTopOf="@id/meme_foo"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/meme_funny"
+        android:layout_marginEnd="24dp"/>
+
+    <ImageView
+        android:id="@+id/meme_grin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/meme_funny"
+        app:layout_constraintStart_toStartOf="@id/meme_funny"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/meme_grin"
+        android:layout_marginEnd="24dp"/>
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="proceed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meme_grin"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="48dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "989019224575",
+    "project_id": "memopedia-6974f",
+    "storage_bucket": "memopedia-6974f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989019224575:android:6385cda358dcc772614fca",
+        "android_client_info": {
+          "package_name": "com.example.memopedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989019224575-tme81dej6tmkjvftbq3allvi3jueiv0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARysY1VqmD-DTuzi2TZYqv1jVRqnTloXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989019224575-tme81dej6tmkjvftbq3allvi3jueiv0d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
